@@ -100,7 +100,7 @@ public class TagStreamFragment extends Fragment {
                 mWebView.getSettings()
                     .setJavaScriptCanOpenWindowsAutomatically(false);
                 try {
-                    mWebView.loadUrl("http://twitter.com/#!/search/"
+                    mWebView.loadUrl("http://mobile.twitter.com/search?q="
                         + URLEncoder.encode(mSearchString, "UTF-8"));
                 } catch ( UnsupportedEncodingException e ) {
                     Log.e(TAG, "Could not construct the realtime search URL", e);
