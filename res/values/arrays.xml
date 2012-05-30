@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sponsor_level_names">
+        <item>@string/sponsor_level_diamond</item>
+        <item>@string/sponsor_level_gold</item>
+        <item>@string/sponsor_level_silver</item>
+        <item>@string/sponsor_level_bronze</item>
+        <item>@string/sponsor_level_media</item>
+    </string-array>
+    
+</resources>

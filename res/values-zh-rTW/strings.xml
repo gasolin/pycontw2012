@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2011 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="description_logo">PYCON Taiwan 2012</string>
+    <string name="description_home">首頁</string>
+    <string name="description_search">搜尋</string>
+    <string name="description_map">地圖</string>
+    <string name="description_refresh">更新議程</string>
+    <string name="description_share">分享</string>
+    <string name="description_star">標記</string>
+    <string name="description_now">跳至現在時間</string>
+
+    <string name="title_now_playing">現在進行中</string>
+    <string name="title_schedule">議程</string>
+    <string name="title_sessions">講題</string>
+    <string name="title_session_detail">講題資訊</string>
+    <string name="title_starred">書籤</string>
+    <string name="title_tracks">主題</string>
+    <string name="title_sponsors">贊助單位</string>
+    <string name="title_sponsor_detail">贊助單位資訊</string>
+    <string name="title_map">地圖</string>
+    <string name="title_tagstream">即時線上討論</string>
+    <string name="title_bulletin">部落格</string>
+
+    <string name="title_session_tracks">議程主題</string>
+    <string name="title_sponsor_levels">贊助等級</string>
+
+    <string name="title_share">分享方式</string>
+
+    <string name="title_search">搜尋</string>
+    <string name="title_search_query">搜尋詞 \'<xliff:g id="query">%1$s</xliff:g>\'</string>
+
+    <string name="btn_schedule">議程</string>
+    <string name="btn_map">地圖</string>
+    <string name="btn_sessions">講題</string>
+    <string name="btn_starred">書籤</string>
+    <string name="btn_sponsors">贊助單位</string>
+    <string name="btn_announcements">部落格</string>
+
+    <string name="toast_sync_error">同步錯誤: <xliff:g id="error">%1$s</xliff:g></string>
+
+    <string name="session_subtitle"><xliff:g id="time">%1$s</xliff:g> 在 <xliff:g id="room">%2$s</xliff:g></string>
+
+    <string name="all_sessions_title">所有議程</string>
+    <string name="all_sessions_subtitle">按此依主題過濾講題</string>
+    <string name="general_sessions_title">一般議程</string>
+
+    <string name="empty_sessions">查無講題</string>
+    <string name="empty_session_detail">查無講題摘要</string>
+    <string name="empty_sponsors">查無贊助單位資訊</string>
+    <string name="empty_search">查無搜尋結果</string>
+    <string name="empty_links">查無連結</string>
+
+    <string name="session_summary">摘要</string>
+    <string name="session_links">連結</string>
+    <string name="session_speakers">講師</string>
+
+    <string name="tag_stream">即時線上討論</string>
+    
+    <string name="session_link_main">網址</string>
+    <string name="session_link_moderator">詢問問題</string>
+    <string name="session_link_youtube">YouTube 影片</string>
+    <string name="session_link_pdf">投影片 (PDF)</string>
+    
+    <string name="sponsor_level_diamond">鑽石級</string>
+    <string name="sponsor_level_gold">黃金級</string>
+    <string name="sponsor_level_silver">白銀級</string>
+    <string name="sponsor_level_bronze">青銅級</string>
+    <string name="sponsor_level_media">媒體夥伴</string>
+
+    <string name="search_sessions">講題</string>
+    <string name="search_sponsors">贊助單位</string>
+
+    <string name="starred_sessions">講題</string>
+    <string name="starred_sponsors">贊助單位</string>
+
+    <string name="search_label">PYCON</string>
+    <string name="search_hint">搜尋關鍵字</string>
+
+    <string name="share_template">我正在關注 <xliff:g id="hashtags">%2$s</xliff:g> 的 \'<xliff:g id="title">%1$s</xliff:g>\' <xliff:g id="url">%3$s</xliff:g></string>
+
+    <plurals name="whats_on_countdown_title">
+        <item quantity="zero">距離 PYCON 還有\n<xliff:g id="remaining_time">%2$s</xliff:g></item>
+        <item quantity="one">距離 PYCON 還有\n<xliff:g id="number_of_days">%1$s</xliff:g> 天又 <xliff:g id="remaining_time">%2$s</xliff:g></item>
+        <item quantity="other">距離 PYCON 還有\n<xliff:g id="number_of_days">%1$s</xliff:g> 天又 <xliff:g id="remaining_time">%2$s</xliff:g></item>
+    </plurals>
+
+    <string name="whats_on_stream_title">即時\n線上討論</string>
+    <string name="whats_on_now_playing_title">現在進行中</string>
+    <string name="whats_on_thank_you_title">明年見!</string>
+
+    <string name="permission_write">修改 PYCON 議程資料</string>
+
+    <string name="toast_now_not_visible">議程開始時按此按鈕可以顯示當下時間。</string>
+
+    <string name="block_title_breakout_sessions">專題演講</string>
+
+    <!-- EULA -->
+    <string name="eula_title">EULA title.</string>
+    <string name="eula_text">EULA goes here.</string>
+    <string name="accept">接受</string>
+    <string name="decline">拒絕</string>
+
+</resources>

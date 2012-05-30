@@ -1,0 +1,27 @@
+[
+  {
+    "en": "All Conf. Rooms (Live)", 
+    "zh-cn": "\u5168\u573a\u5730\u8054\u64ad", 
+    "zh-tw": "\u5168\u5834\u5730\u806f\u64ad"
+  }, 
+  {
+    "en": "Int'l Conf. Room", 
+    "zh-cn": "\u56fd\u9645\u4f1a\u8bae\u5385", 
+    "zh-tw": "\u570b\u969b\u6703\u8b70\u5ef3"
+  }, 
+  {
+    "en": "First Conf. Room", 
+    "zh-cn": "\u7b2c\u4e00\u4f1a\u8bae\u5ba4", 
+    "zh-tw": "\u7b2c\u4e00\u6703\u8b70\u5ba4"
+  }, 
+  {
+    "en": "Second Conf. Room", 
+    "zh-cn": "\u7b2c\u4e8c\u4f1a\u8bae\u5ba4", 
+    "zh-tw": "\u7b2c\u4e8c\u6703\u8b70\u5ba4"
+  }, 
+  {
+    "en": "Social Room", 
+    "zh-cn": "\u4ea4\u8c0a\u5385", 
+    "zh-tw": "\u4ea4\u8abc\u5ef3"
+  }
+]

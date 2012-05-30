@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2011 Delta Inc.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- Show customable preference -->
+    <string name="demo_mode">false</string>
+	<!-- lesson info -->
+	<string name="app_name">PYCON Taiwan 2012</string>
+	<!-- not shown but must have -->
+	<string name="lesson_start_time">"2012-06-09T09:00:00.000+08:00"</string>
+	<string name="lesson_end_time">"2012-06-10T17:30:00.000+08:00"</string>
+	
+	<!-- Activity -->
+	<string name="tagstream_base_url">"http://twitter.com/#!/search/"</string>
+	<string name="tagstream_keyword">"#pycon.tw"</string>
+	
+	<!-- Bulletin -->
+	<string name="bulletin_pattern">"tw\\.pycon\\.org"</string>
+	<string name="bulletin_url">"http://tw.pycon.org/2012/program/"</string>
+	
+	<!-- API -->
+	<string name="rooms_url">"http://qifakong.appspot.com/api/pycontw12/program/rooms/"</string>
+	<string name="tracks_url">"http://qifakong.appspot.com/api/pycontw12/program/types/"</string>
+	<string name="sessions_url">"http://qifakong.appspot.com/api/pycontw12/program/"</string>
+	<string name="ping_url">"http://qifakong.appspot.com/ping"</string>
+	<!-- not used but must have -->
+	<string name="sponsors_url">"http://qifakong.appspot.com/api/pycontw12/program/sponsors/"</string>
+</resources>

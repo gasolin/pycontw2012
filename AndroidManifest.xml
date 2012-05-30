@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="tw.idv.gasolin.pycontw2012" android:versionCode="11"
+	android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="13" />
+
+	<permission android:name="tw.idv.gasolin.pycontw2012.permission.WRITE_SCHEDULE"
+		android:protectionLevel="normal" android:label="@string/permission_write"
+		android:description="@string/permission_write" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<application android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" android:logo="@drawable/title_logo"
+		android:theme="@style/Theme.COSCUP" android:hardwareAccelerated="true">
+
+		<!-- Activities for both phones and tablets -->
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.HomeActivity" android:theme="@style/Theme.COSCUP.Home"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.TagStreamActivity" android:label="@string/title_tagstream" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.StarredActivity" android:label="@string/title_starred" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.BulletinActivity" android:label="@string/title_bulletin" />
+		<activity android:name="tw.idv.gasolin.pycontw2012.util.Pref" />
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.SearchActivity" android:label="@string/title_search"
+			android:launchMode="singleTop">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable"
+				android:resource="@xml/searchable" />
+		</activity>
+
+		<!-- Phone-only activities -->
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.ScheduleActivity"
+			android:label="@string/title_schedule" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.TracksActivity"
+			android:label="@string/title_tracks">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.coscup.track" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.SessionsActivity"
+			android:label="@string/title_sessions">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.TAB" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.coscup.session" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.SessionDetailActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.coscup.session" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.SponsorLevelsActivity"
+			android:label="@string/title_sponsor_levels" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.SponsorsActivity"
+			android:label="@string/title_sponsors">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.TAB" />
+				<data android:mimeType="vnd.android.cursor.dir/vnd.coscup.sponsor" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.phone.SponsorDetailActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.coscup.sponsor" />
+			</intent-filter>
+		</activity>
+
+		<!-- Tablet-only activities -->
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.tablet.SessionsMultiPaneActivity"
+			android:label="@string/title_sessions" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.tablet.ScheduleMultiPaneActivity"
+			android:label="@string/title_schedule" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.tablet.SponsorsMultiPaneActivity"
+			android:label="@string/title_sponsors" />
+
+		<activity android:name="tw.idv.gasolin.pycontw2012.ui.tablet.NowPlayingMultiPaneActivity"
+			android:label="@string/title_now_playing" />
+
+
+		<!-- Used for install referrer tracking -->
+		<receiver android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+
+		<!-- Other manifest items -->
+
+		<meta-data android:name="android.app.default_searchable"
+			android:value="tw.idv.gasolin.pycontw2012.ui.SearchActivity" />
+
+		<service android:name="tw.idv.gasolin.pycontw2012.service.SyncService" />
+
+		<provider android:name="tw.idv.gasolin.pycontw2012.provider.CoscupProvider"
+			android:authorities="tw.idv.gasolin.pycontw2012" android:writePermission="tw.idv.gasolin.pycontw2012.permission.WRITE_SCHEDULE" />
+
+
+	</application>
+</manifest>
